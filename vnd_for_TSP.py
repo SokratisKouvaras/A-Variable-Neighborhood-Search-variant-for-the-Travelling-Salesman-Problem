@@ -83,7 +83,7 @@ class VND :
         cleaned = [x.lstrip() for x in content if x != ""] 
         for item in cleaned:
             if item.startswith("DIMENSION"):
-                N=int(re.compile(r'[^\d]+').sub("",item))                                                    #τη λέξη DIMENSION κρατάει το πλήθος                                                  #των πόλεων.                    
+                N=int(re.compile(r'[^\d]+').sub("",item))                                                                                                     #των πόλεων.                    
         for item in cleaned:
             for i in range(1, N+1):                
                 if item.startswith(str(i)):        
